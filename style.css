@@ -1,0 +1,131 @@
+body {
+ 	background-color: #a1e2e6;
+	color: #262517;
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+h1 {
+ 	 color: #f37121;
+ 	 font-family: 'Permanent Marker', cursive;
+ 	 font-size: 40px;
+ 	 letter-spacing: 6px;
+	 text-align: center;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+/* Desgin with Class */
+
+.container {
+	width: 600px;
+      	margin: 0 auto; 
+
+}
+
+.card-white {
+	background: #eee;
+        padding: 10px 40px 20px 40px;
+        margin: 50px;
+        box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+        border-radius: 4px;
+}
+
+.btn-orange {
+	background-color: #f37121;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+.btn-orange:hover {
+	background-color: gray;
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.list-inline li {
+	display: inline;
+	padding: 15px;
+}
+
+.list-inline i {
+	font-size: 40px;
+	color: #f37121;
+	border-radius: 4px;
+}
+
+.list-inline i:hover {
+	color: gray;
+	border-radius: 4px;
+}
+
+
+
+/* Desgin with Id */
+
+#introduction {
+	text-align: center;
+	
+}
+
+#introduction p {
+	margin-bottom: 40px;
+
+}
+
+#photo {
+ 	border-radius: 50%;
+	animation: spin 6000ms infinite alternate;
+	transition: transform ease-in-out;
+}
+
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 1024px) {
+ 	 .container {
+ 	  	width: 600px;
+		margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+ 	 .container {
+ 	  	width: 500px;
+		margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+ 	.container {
+ 	  	width: 100%;
+		margin: 0 auto;
+  }
+
+	h1 {
+ 		font-size: 30px;
+ 	 	letter-spacing: 5px;
+	}
+}
